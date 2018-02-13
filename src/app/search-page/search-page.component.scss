@@ -1,0 +1,41 @@
+:host {
+  .search-form {
+    color: #ffff;
+    margin: 50px auto;
+    text-align: center;
+    position:relative;
+    input {
+      font-family: 'Montserrat-Semi';
+      font-size: 0.9em;
+      width: 96%;
+      padding: 12px 1.5%;
+      border-radius: 5px;
+    }
+    button {
+      background: url('/assets/images/search.svg') no-repeat center;
+      background-size: 70% 70%;
+      border: none;
+      border-left: 1px solid;
+      padding:20px;
+      margin: 0;
+      position: absolute;
+      top: 4px; right: 5px;
+      cursor: pointer;
+      z-index: 100;
+    }
+  }
+
+  @media (min-width: 720px) {
+    .search-form {
+      input {
+        font-size: 1em;
+        width: 655px;
+        padding: 12px;
+      }
+      button {
+        margin: 5px 0 0 -45px;
+        right:auto; top:auto;
+      }
+    }
+  }
+}

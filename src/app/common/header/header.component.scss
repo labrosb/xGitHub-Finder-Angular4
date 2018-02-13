@@ -1,0 +1,74 @@
+:host {
+  .header {
+    background-color: rgba(255,255,255,.08);
+    border-radius: 6px;
+    text-align: center;
+    color: #ffff;
+    padding: 0;
+    .logo {
+      display: inline-block;
+      cursor: pointer;
+      .logo-img {
+        height: 35px;
+        margin: 0 5px -5px 0;
+      }
+      h2 {
+        font-family: 'GitFont', sans-serif;
+        display: inline-block;
+      }
+    }
+    p {
+      font-family: 'BeautifulEveryTime', sans-serif;
+      font-size: 1em;
+      margin: -15px 0 0 10px;
+      display: block;
+    }
+  }
+
+  @media (min-width: 540px) {
+    .header {
+      text-align: left;
+      padding: 10px 0;
+      .logo {
+        margin-left: 3%;
+        .logo-img {
+          height: 45px;
+          margin: 0 5px -10px 0px;
+        }
+        h2 {
+          font-size: 1.8em;
+        }
+      }
+      p {
+        font-size: 1.4em;
+        padding-top: 1.3em;
+        text-align: center;
+        width: 58%;
+        min-width: 300px;
+        margin: auto ;
+        float: right;
+        display: inline-block;
+      }
+    }
+  }
+
+  @media (min-width: 680px) {
+    .header {
+      padding: 25px 0;
+      .logo {
+        width: 220px;
+        margin-left: 6%;
+        .logo-img {
+          height: 60px;
+          margin: 0 10px -15px 0px;
+        }
+        h2 {
+          font-size: 2em;
+        }
+      }
+      p {
+        font-size: 1.7em;
+      }
+    }
+  }
+}

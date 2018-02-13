@@ -1,0 +1,6 @@
+<form class="search-form" #form="ngForm" (ngSubmit)="onSubmit(form.value)" (input)="onChange(form.value)">
+  <input type="text" name="username" placeholder="Search by Username" ngModel>
+  <button type="submit"></button>
+</form>
+
+<users-list *ngIf="users.length > 0" [users]="users"></users-list >

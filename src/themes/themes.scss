@@ -1,0 +1,22 @@
+@font-face {
+  font-family: GitFont;
+  src: url('/assets/fonts/ApexSansBoldST.ttf');
+}
+
+@font-face {
+  font-family: BeautifulEveryTime;
+  src: url('/assets/fonts/BeautifulEveryTime.ttf');
+}
+
+@font-face {
+  font-family: Montserrat-Semi;
+  src: url('/assets/fonts/Montserrat-SemiBold.ttf');
+}
+// Architecture for future theming
+$background: (
+  tech-business: '/assets/images/background.jpg' ,
+);
+
+.tech-background {
+  background: url(map-get($background, tech-business)) top center/cover no-repeat fixed;
+}

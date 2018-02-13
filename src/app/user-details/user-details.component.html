@@ -1,0 +1,39 @@
+<div class="user-details" *ngIf="user">
+  <div class="main-content element">
+    <img src="{{user.avatar_url}}" alt="userImg">
+    <div class="main-details">
+      <h3 class="username"> {{user.login}} </h3>
+      <div class="score"> Score : {{user.score}} </div>
+      <div class="github-url">
+        <a href="{{user.html_url}}"> {{user.html_url}} </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="repositories element">
+    <h3> Repositories </h3>
+    <div class="repository" *ngFor="let repo of userRepositories | slice:0:reposLimit">
+      <a href="{{repo.html_url}}"> <div class="repo-inner"> {{repo.name}} </div> </a>
+    </div>
+    <div class="msg" *ngIf="userRepositories.length == 0"> <span> No repositories.. </span> </div>
+    <div class="msg" *ngIf="userRepositories.length >= reposLimit">
+      <br>
+      <a href="{{user.html_url}}"> <span> See all on GitHub page </span> </a>
+    </div>
+  </div>
+
+  <div class="followers element">
+    <h3> Followers </h3>
+    <div class="follower" *ngFor="let follower of userFollowers | slice:0:followersLimit">
+      <a href="{{follower.html_url}}">
+        <img src="{{follower.avatar_url}}" alt="FollowerImg">
+        <span class="follower-title"> {{follower.login}} </span>
+      </a>
+    </div>
+    <div class="msg" *ngIf="userFollowers.length==0"> <span> No Followers.. </span> </div>
+    <div class="msg" *ngIf="userFollowers.length>=followersLimit">
+      <br>
+      <a href="{{user.html_url}}"> <span> See all on GitHub page </span> </a>
+    </div>
+  </div>
+</div>

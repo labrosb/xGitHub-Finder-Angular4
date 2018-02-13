@@ -1,0 +1,11 @@
+
+<div class="users-list">
+  <div class="users-content">
+    <div class="user" *ngFor="let user of users | slice:0:30">
+      <div class="user-details" (click)="onUserClick(user)">
+        <img src="{{user.avatar_url}}" alt="userImg">
+        <div class="userName"> {{user.login}} </div>
+      </div>
+    </div>
+  </div>
+</div>
