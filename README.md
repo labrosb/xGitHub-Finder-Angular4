@@ -1,4 +1,4 @@
-# xGitHub-Finder-Angular4
+# xGitHub-Finder
 
 Try it here: https://labrosb.github.io/xGitHub-Finder-Angular4
 
