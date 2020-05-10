@@ -11,4 +11,4 @@ JavaScript Project: A web application implemented with Anguler 4, consuming the 
 
 Year of implementation : 2018
 
-Project : Individual 
+Project : Individual
