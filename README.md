@@ -8,7 +8,7 @@ Try it here: https://labrosb.github.io/xGitHub-Finder-Angular4
 
 </p>
 
-JavaScript Project: A web application consumint the GitHub Api to search and present profiles.
+JavaScript Project: A web application implemented with Anguler 4, consuming the GitHub Api to search and present GitHub profiles.
 
 Year of implementation : 2018
 
